@@ -36,7 +36,7 @@ const Home = () => {
   // Render / UI
   return <OneColumn>
     <main>
-      <div className="py-10">
+      <div className="py-10 px-6">
         <h1 className="text-2xl font-medium mb-8">Home Content</h1>
         <pre className="bg-slate-100 p-8 mb-8"><code>{JSON.stringify(data, null, ' ')}</code></pre>
         <form onSubmit={onSubmitForm}>
@@ -45,7 +45,7 @@ const Home = () => {
             <input className="h-12 px-4 border border-slate-100 rounded" onChange={onChangeInput("name")} value={state?.name ?? ''} type="text" name="name" placeholder="Name" />
           </div>
           <div className="mb-4">
-            <button className="bg-slate-800 text-white h-12 px-8 rounded-full" type="submit">Submit</button>
+            <button className="bg-slate-800 text-white h-12 px-8 rounded-full hover:bg-black transition-colors ease-in-out duration-200" type="submit">Submit</button>
           </div>
         </form>
       </div>
